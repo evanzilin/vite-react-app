@@ -48,14 +48,14 @@ export function NavMain({
             className="group/collapsible"
           >
             <SidebarMenuItem>
-              <CollapsibleTrigger asChild>
-                <SidebarMenuButton tooltip={item.title} disabled={item.disable}>
+              <CollapsibleTrigger asChild>                
+                <SidebarMenuButton className="my-0.5" tooltip={item.title} disabled={item.disable} specifies={item.count !== undefined && "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"}>
                   {item.icon ? <item.icon /> : <div className="h-5 w-5"></div>}
                   <span>{item.title}</span>
                   {/* {item.count !== undefined && <Badge className="ml-auto text-dark">{item.count}</Badge>} */}
                   {item.count !== undefined && 
                     <div className="ml-auto flex items-center">
-                      <Badge className="ml-auto text-dark h-[22px] w-[26px] text-center">{item.count}</Badge>
+                      <Badge className="ml-auto text-dark h-5.5 w-6.5 text-center">{item.count}</Badge>
                       <ChevronRight className={cn("ml-1 w-4.5 h-4.5 transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90")} />
                     </div>
                   }
@@ -66,9 +66,9 @@ export function NavMain({
                   {item.items?.map((subItem) => (
                     <SidebarMenuSubItem key={subItem.title}>
                       <SidebarMenuSubButton asChild>
-                        <a href={subItem.url} className="flex justify-between items-center h-[42px]">
+                        <a href={subItem.url} className="flex justify-between items-center h-10.5">
                           <span>{subItem.title}</span>
-                          {!!subItem.count && <Badge className="bg-[#d3d3d3] text-dark h-[22px] w-[26px] text-center">{subItem.count}</Badge>}
+                          {!!subItem.count && <Badge className="bg-[#d3d3d3] text-dark h-5.5 w-6.5 text-center">{subItem.count}</Badge>}
                         </a>
                       </SidebarMenuSubButton>
                     </SidebarMenuSubItem>

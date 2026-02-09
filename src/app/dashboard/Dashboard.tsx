@@ -18,23 +18,23 @@ export default function Page() {
             <SidebarInset>
                 <div className="flex px-6 align-middle justify-center border-b border-[#F5F5F5] mb-14.75">
                         <div className="w-full max-w-270">
-                        <div className="h-16  flex items-center justify-between">
-                            <div className="flex items-center gap-3">
-                            <h1 className="text-lg font-semibold leading-6 text-dark">Lorem ipsum</h1>
-                            <span className="lg:block hidden text-sm font-medium text-[#b5b5b5]">(12)</span>
-                            <span className="lg:block hidden text-sm font-medium text-dark">
+                            <div className="h-16  flex items-center justify-between">
+                                <div className="flex items-center gap-2.75">
+                                <h1 className="text-lg font-semibold leading-6 text-dark">Lorem ipsum</h1>
+                                <span className="lg:block hidden text-sm font-medium text-[#b5b5b5]">(12)</span>
+                                <span className="lg:block hidden text-sm font-medium text-dark">
+                                    Lorem ipsum dolar sit amet
+                                </span>
+                                </div>
+                                <button className="h-9.5 px-3.5 bg-dark rounded-lg flex items-center gap-2 text-white text-sm hover:opacity-90 transition-opacity">
+                                <Plus className="w-5 h-5" strokeWidth={1.5} />
+                                <span className="md:block hidden">Lorem ipsum</span>
+                                </button>
+                            </div>
+                            <span className="lg:hidden block text-sm font-medium text-[#b5b5b5]">(12)</span>
+                            <span className="lg:hidden block text-sm font-medium text-dark my-3">
                                 Lorem ipsum dolar sit amet
                             </span>
-                            </div>
-                            <button className="h-9.5 px-3.5 bg-dark rounded-lg flex items-center gap-2 text-white text-sm hover:opacity-90 transition-opacity">
-                            <Plus className="w-5 h-5" strokeWidth={1.5} />
-                            <span className="md:block hidden">Lorem ipsum</span>
-                            </button>
-                        </div>
-                        <span className="lg:hidden block text-sm font-medium text-[#b5b5b5]">(12)</span>
-                        <span className="lg:hidden block text-sm font-medium text-dark my-3">
-                            Lorem ipsum dolar sit amet
-                        </span>
                         </div>
                 </div>
                 <div className="flex-1 px-6 align-middle flex justify-center">

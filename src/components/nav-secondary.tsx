@@ -10,6 +10,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import type { LucideIcon } from "lucide-react"
+import { JSX } from "react/jsx-runtime"
 
 export function NavSecondary({
   items,
@@ -29,8 +30,8 @@ export function NavSecondary({
     <SidebarGroup {...props}>
       <SidebarGroupContent>
         <SidebarMenu>
-          {items.map((item) => (
-            <SidebarMenuItem key={item.title}>
+          {items.map((item: any ) => (
+            <SidebarMenuItem key={item.title} className="mt-1">
               <SidebarMenuButton asChild>
                 <a href={item.url}>
                   {item.icon ? <item.icon /> : <div className="h-5 w-5"></div>}

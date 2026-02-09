@@ -30,7 +30,7 @@ export function NavSecondary({
       <SidebarGroupContent>
         <SidebarMenu>
           {items.map((item: any ) => (
-            <SidebarMenuItem key={item.title} className="mt-1">
+            <SidebarMenuItem key={item.title} className="mt-0.5">
               <SidebarMenuButton asChild>
                 <a href={item.url}>
                   {item.icon ? <item.icon /> : <div className="h-5 w-5"></div>}

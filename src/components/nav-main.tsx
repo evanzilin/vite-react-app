@@ -49,7 +49,7 @@ export function NavMain({
           >
             <SidebarMenuItem>
               <CollapsibleTrigger asChild>                
-                <SidebarMenuButton className={cn("my-0.5", item.count !== undefined && "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground")} tooltip={item.title} disabled={item.disable}>
+                <SidebarMenuButton className={cn("my-px", item.count !== undefined && "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground")} tooltip={item.title} disabled={item.disable}>
                   {item.icon ? <item.icon /> : <div className="h-5 w-5"></div>}
                   <span>{item.title}</span>
                   {/* {item.count !== undefined && <Badge className="ml-auto text-dark">{item.count}</Badge>} */}

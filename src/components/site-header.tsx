@@ -61,7 +61,7 @@ export function SiteHeader() {
           "linear-gradient(90deg, transparent, bg-primary 50%, transparent)",
       }}
     />
-    <div className="relative flex max-w-xl items-center h-9 w-135">
+    <div className="relative flex max-w-xl items-center h-9 w-135 ml-6">
       <Search className="absolute left-3 h-4.5 w-4.5 text-muted-foreground" />
       <input
         placeholder="Search"
@@ -81,7 +81,7 @@ export function SiteHeader() {
         </div>
       </div>
     </div>
-    <div className="flex items-center space-x-4 mx-3">
+    <div className="flex items-center space-x-4 ml-3 mr-6">
       <button className="flex justify-center items-center bg-primary text-dark px-3.25 py-1.5 rounded-sm">
         <span className="md:block hidden font-semibold leading-5 text-[14px]">Account plans</span>
         <TicketCheck className="md:hidden block ml-1 w-4 h-4 text-dark" />

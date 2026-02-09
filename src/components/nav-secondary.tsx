@@ -10,7 +10,6 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import type { LucideIcon } from "lucide-react"
-import { JSX } from "react/jsx-runtime"
 
 export function NavSecondary({
   items,
